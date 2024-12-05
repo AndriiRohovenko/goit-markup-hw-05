@@ -543,3 +543,44 @@ button {
 }
 
 /* #endregion */
+
+/* #region  */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--backdrop-depth);
+
+  background-color: rgba(35, 35, 35, 0.447);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: 300ms ease-in;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
+
+  max-width: 517px;
+  width: 100%;
+  min-height: 600px;
+  padding: 40px;
+  background-color: lightblue;
+  border-radius: 15px;
+  transition: 200ms ease-in;
+}
+.backdrop.is-open .modal {
+  transform: translateX(-50%) translateY(-50%);
+  transition-delay: 300ms;
+}
+
+/* #endregion */
