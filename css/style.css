@@ -580,7 +580,7 @@ input {
   color: rgb(var(--white));
 }
 
-.footer-form-wrapper .cta-button {
+.footer-form .cta-button {
   width: 165px;
   height: 40px;
   display: inline-flex;
