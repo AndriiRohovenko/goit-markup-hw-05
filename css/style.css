@@ -530,6 +530,7 @@ input {
 .page-footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo-text {
@@ -552,6 +553,44 @@ input {
 .page-footer .social-media-list-link:active,
 .page-footer .social-media-list-link:focus {
   background-color: rgba(var(--success-green));
+}
+
+.footer-form-wrapper {
+}
+.footer-form-caption {
+  color: white;
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+.footer-form {
+}
+.footer-form-field {
+}
+
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: rgb(var(--navy-blue));
+  margin-right: 24px;
+  padding: 16px;
+  color: rgb(var(--white));
+}
+
+.cta-button {
+  width: 165px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.footer-form-btn-icon {
+  position: absolute;
+  right: 24px;
+  fill: rgb(var(--white));
 }
 
 /* #endregion */
