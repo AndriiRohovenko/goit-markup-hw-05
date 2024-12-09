@@ -586,29 +586,27 @@
         <div class="footer-form-wrapper">
           <p class="footer-form-caption">Subscribe</p>
           <form class="footer-form" name="subscribe-form">
-            <div class="footer-form-field">
-              <label for="footer-user-email" class="footer-form-input-label">
-                <input
-                  class="footer-form-input"
-                  type="email"
-                  name="user-email"
-                  id="footer-user-email"
-                  placeholder="E-mail"
-                  required
-                />
-              </label>
-              <button class="footer-form-btn" type="submit">
-                <svg
-                  class="footer-form-btn-icon"
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                >
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-                <span>Subscribe</span>
-              </button>
-            </div>
+            <label for="footer-user-email" class="footer-form-input-label">
+              <input
+                class="footer-form-input"
+                type="email"
+                name="user-email"
+                id="footer-user-email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="footer-form-btn" type="submit">
+              <svg
+                class="footer-form-btn-icon"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+              <span>Subscribe</span>
+            </button>
           </form>
         </div>
       </div>
@@ -638,7 +636,7 @@
                 placeholder=" "
                 required
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
               <!-- <svg class="notification-icon" width="24" height="24">
@@ -649,9 +647,7 @@
           </div>
 
           <div class="modal-form-field">
-            <label class="modal-form-label" for="user-phone">
-              Phone number
-            </label>
+            <label class="modal-form-label" for="user-phone"> Phone </label>
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
@@ -703,14 +699,14 @@
               class="visually-hidden"
               type="checkbox"
               name="user-agreement"
-              id="user-agreement"
+              id="user-privacy"
               value="true"
               checked
             />
-            <label class="modal-form-agreement-desc" for="user-agreement">
+            <label class="modal-form-agreement-desc" for="user-privacy">
               <!-- <input class="custom-checkbox" type="checkbox" name="agreement" /> -->
               <span class="modal-form-checkbox">
-                <svg class="modal-form-checkbox-icon" width="16" height="16">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
