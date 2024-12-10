@@ -587,9 +587,10 @@ input {
 .footer-form-btn {
   min-width: 165px;
   height: 40px;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
   font-weight: var(--weight-medium);
   letter-spacing: 0.04em;
   color: rgb(var(--white));
@@ -608,8 +609,10 @@ input {
 }
 
 .footer-form-btn-icon {
-  position: absolute;
-  right: 24px;
+  /* position: absolute; */
+  /* right: 24px; */
+
+  margin-left: 16px;
   fill: rgb(var(--white));
 }
 
@@ -640,15 +643,12 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-
   width: 408px;
   min-height: 584px;
   padding: 24px;
   padding-top: 72px;
   border-radius: 4px;
   background: #fcfcfc;
-  /* background-color: white; */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: var(--custom-transition);
