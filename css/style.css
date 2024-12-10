@@ -753,7 +753,7 @@ input {
   opacity: 1;
 }
 
-.modal-form-field .modal-form-message {
+.modal-form-field > .modal-form-message {
   margin-bottom: 16px;
 }
 
@@ -797,10 +797,11 @@ input {
   border: 1px solid rgba(var(--navy-blue-modal));
   cursor: pointer;
   transition: var(--custom-transition);
-  transition-property: border, background-color;
+  transition-property: border, background-color, fill;
   align-items: center; /* Align checkbox and text vertically */
   fill: transparent;
 }
+
 input[type='checkbox']:checked
   + .modal-form-agreement-desc
   > .modal-form-checkbox {
