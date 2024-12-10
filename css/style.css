@@ -629,6 +629,7 @@ input {
   pointer-events: none;
 
   transition: var(--custom-transition);
+  transition-property: opacity, visibility;
 }
 .backdrop.is-open {
   opacity: 1;
@@ -646,10 +647,12 @@ input {
   padding: 24px;
   padding-top: 72px;
   border-radius: 4px;
-  background-color: white;
+  background: #fcfcfc;
+  /* background-color: white; */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: var(--custom-transition);
+  transition-property: transform;
 }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
@@ -669,15 +672,14 @@ input {
   border: none;
   background-color: rgba(var(--corn-flower));
   transition: var(--custom-transition);
-  transition-property: background-color, fill;
+  transition-property: background-color, fill, border;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: rgba(var(--ocean));
-  transition: var(--custom-transition);
-  transition-property: fill;
+  border: none;
 }
 .modal-btn-icon {
   fill: rgb(var(--white));
@@ -747,10 +749,9 @@ input {
   transform: translateY(-50%);
   /* stroke: rgb(var(--cl-primary)); */
   transition: var(--custom-transition);
-  transition-property: stroke, fill;
+  transition-property: fill;
 }
 .modal-form-input:focus + .modal-form-icon {
-  stroke: rgb(var(--iris));
   fill: rgb(var(--iris));
 }
 /* .notification-icon {
