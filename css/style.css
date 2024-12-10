@@ -652,7 +652,6 @@ input {
 }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
-  transition-delay: 300ms;
 }
 
 .modal-btn {
@@ -668,7 +667,7 @@ input {
   border: none;
   background-color: rgba(var(--corn-flower));
   transition: var(--custom-transition);
-  transition-property: background-color, border, fill;
+  transition-property: background-color, border;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -678,6 +677,8 @@ input {
   border: none;
 }
 .modal-btn-icon {
+  transition: var(--custom-transition);
+  transition-property: fill;
   fill: rgb(var(--white));
 }
 .modal-caption {
@@ -753,10 +754,6 @@ input {
   opacity: 1;
 }
 
-.modal-form-field > .modal-form-message {
-  margin-bottom: 16px;
-}
-
 .modal-form-message {
   resize: none;
   height: 120px;
@@ -767,6 +764,10 @@ input {
 }
 .modal-form-message::placeholder {
   color: rgba(64, 64, 64, 0.3);
+}
+
+.text-area {
+  margin-bottom: 16px;
 }
 
 .modal-form-agreement {
